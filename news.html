@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>News</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">GoyaG</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>News</h2>
+      <h3>Ilsan Lake Park</h3> 
+      <p>Ilsan Lake Park is the largest artificial lake park. Designed to provide
+        a natural-looking space for outdoor recreation in an urban area that is
+        isolated from natural water and trees. There are over 100 different kinds
+        of wild flowers, a forest with more than 200,000 trees, and a healthy
+        population of red-crowned cranes.<br>
+        Its wide range of facilities include a waterfront square, an artificial
+        island, about 5-km connecting bike path, a parking lot, three  playgrounds,
+        a nature experience center, and a music fountain. The lake park hosts
+       Goyang Korea Flower Show and other fairs and exhibitions.<br>
+      </p>
+
+      <p>
+        <br>How to get to Ilsan Lake Park:<br>
+        Address: 906, Janghang-dong, Ilsandong-gu,<br> Goyang-si (경기 고양시 일산동구 595)
+        <br>To get there by subway Jeongbalsan station (정발산역)
+      </p>
+
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com"><img src="facebook.png"></a></li>
+      <li><a href="https://twitter.com"><img src="twitter.png"></a></li>
+      <li><a href="https://www.instagram.com"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./gallary.html">Gallary</a></li>
+      <li><a href="./media.html">Media</a></li>
+      <li><a href="./news.html">News</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>

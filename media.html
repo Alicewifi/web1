@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Media</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">GoyaG</h2>
+      <div class="toggle"></div>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Media</h2>
+      <h3>Ilsan Lake Park</h3>
+      <p>Melody of nature with birds sounds.
+      </p>
+
+      <audio controls autoplay muted>
+        <source src="nature_birds.ogg" type="audio/ogg">
+        <source src="nature_birds.mp3" type="audio/mp3">
+      </audio>
+
+    </div>
+
+    <ul class="social">
+      <li><a href="https://www.facebook.com"><img src="facebook.png"></a></li>
+      <li><a href="https://twitter.com"><img src="twitter.png"></a></li>
+      <li><a href="https://www.instagram.com"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./gallary.html">Gallary</a></li>
+      <li><a href="./media.html">Media</a></li>
+      <li><a href="./news.html">News</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>
